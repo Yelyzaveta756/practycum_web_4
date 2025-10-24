@@ -1,0 +1,130 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-optical-sizing: auto;
+    color:#363745;
+    background-color: #f3f1f3;
+}
+
+.list {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+ul, ol {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+	color: currentColor;
+}
+
+
+/* Header  */
+
+.header {
+    background: white;
+    border-bottom: 1px solid #E7E9FC;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.navigation-container {
+    max-width: 1320px;
+    margin: 0 auto;  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.navigation-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px
+}
+
+.logo-container {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.gear-icon {
+    fill: #74757e;
+}
+
+.logo-title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.07; 
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #74757e;
+    opacity: 0.7;
+}
+
+@media screen and (max-width:768px){
+    .navigation-list {
+       display: none;
+    }
+
+    .navigation-container {
+        max-width: 320px;
+    }
+}
+
+.hero-title {
+    font-weight: 100;
+    font-size: 50px;
+    line-height: 1.07; 
+    letter-spacing: 0.04em;
+    text-align: center;
+}
+
+.hero-section {
+    max-width: 1320px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;  
+    padding: 50px 20px;
+}
+
+.hero-image {
+    border-radius: 50%;
+}
+
+@media screen and (max-width:768px){
+    .hero-section {
+        max-width: 320px;
+    }
+}
+
+    .footer-container {
+        background-color: #363745;
+        color: white;
+    }
+
+
