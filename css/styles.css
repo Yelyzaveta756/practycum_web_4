@@ -41,7 +41,6 @@ button {
 
 .header {
     background: white;
-    border-bottom: 1px solid #E7E9FC;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
@@ -59,6 +58,18 @@ button {
     justify-content: center;
     align-items: center;
     gap: 70px
+}
+
+.navigation-list li {
+    color:#363745;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.07; 
+    letter-spacing: 0.02em;
+}
+
+.navigation-list li:hover, .navigation-list li:focus {
+    color:#6cd460;
 }
 
 .logo-container {
@@ -85,14 +96,70 @@ button {
     opacity: 0.7;
 }
 
+.menu-btn {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
 @media screen and (max-width:768px){
+
+    .navigation-container {
+        max-width: 380px;
+        padding: 20px 10px;
+    }
+
+   .gear-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .logo-title {
+        font-size: 20px;
+    }
+
+    .logo-container {
+        gap: 5px;
+    }
+
     .navigation-list {
        display: none;
     }
 
-    .navigation-container {
-        max-width: 320px;
+    .menu-btn {
+        display: flex;
+        background-color: inherit;
+        border: none;
     }
+    
+    .menu-icon {
+        display: flex;
+        fill: #74757e;
+    }
+
+    .menu-icon:hover, .menu-icon:focus {
+        fill:#6cd460;
+    }
+}
+
+.hero-section {
+    max-width: 1080px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;  
+    padding: 55px 20px;
+}
+
+.hero-elements {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 35px;
 }
 
 .hero-title {
@@ -103,28 +170,119 @@ button {
     text-align: center;
 }
 
-.hero-section {
-    max-width: 1320px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin: 0 auto;  
-    padding: 50px 20px;
-}
-
 .hero-image {
     border-radius: 50%;
+    position:relative;
+    right: -320px;
+    top: -35px;
 }
+
+.hero-list {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    z-index: 99999;
+}
+
+.hero-list-item {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.5; 
+    letter-spacing: 0.03em;
+    padding: 35px;
+    text-align: justify;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 320px;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.hero-list-item h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5; 
+    letter-spacing: 0.03em;
+    color: #363745;
+}
+
 
 @media screen and (max-width:768px){
     .hero-section {
-        max-width: 320px;
+        max-width: 380px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 55px 10px;
+    }
+
+    .hero-title {
+        font-size: 30px;
+    }
+
+    .hero-elements img {
+        width: 130px;
+    }
+
+    .hero-elements {
+        margin-bottom: 15px;
+    }
+
+    .hero-list {
+        position: static;
+        flex-direction: column;
+        z-index: 0;
+        align-items: center;
+    }
+
+    .hero-list-item {
+        max-width: 100%;
+    }
+
+    .hero-image {
+        position: static;
+        max-width: 300px;
+        max-height: 300px;
     }
 }
 
-    .footer-container {
+    footer {
         background-color: #363745;
+    }
+
+    .footer-container {
         color: white;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 1.7; 
+        letter-spacing: 0.03em;
+        max-width: 1320px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .footer-container a {
+        color: white;
+    }
+
+    .footer-container a:hover {
+        color: #6cd460;
+    }
+
+    @media screen and (max-width:768px){
+
+        .footer-container {
+            max-width: 380px;
+        }
     }
 
 
