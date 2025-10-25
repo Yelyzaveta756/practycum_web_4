@@ -73,13 +73,10 @@ button {
 }
 
 .logo-container {
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
     display: flex;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
 }
 
 .gear-icon {
@@ -87,8 +84,8 @@ button {
 }
 
 .logo-title {
-    font-weight: 600;
-    font-size: 30px;
+    font-weight: 500;
+    font-size: 26px;
     line-height: 1.07; 
     letter-spacing: 0.03em;
     text-align: center;
